@@ -48,6 +48,12 @@ class CalculatorController extends Controller
         return response()->json($response, $httpCode);
     }
     
+    /**
+     * Subtracts two values and returns the difference of 2 values
+     * 
+     * @param Request $request
+     * @return JSON Array Description
+     */
     public function v1Subtraction(Request $request)
     {
         // validating the inputs 
@@ -73,6 +79,13 @@ class CalculatorController extends Controller
         }
         return response()->json($response, $httpCode);
     }
+    
+    /**
+     * Multiply two values and returns its product
+     * 
+     * @param Request $request
+     * @return JSON Array Description
+     */
     
     public function v1Multiplication(Request $request)
     {
@@ -101,6 +114,12 @@ class CalculatorController extends Controller
         return response()->json($response, $httpCode);
     }
     
+    /**
+     * Divide two values and returns the result
+     * 
+     * @param Request $request
+     * @return JSON Array Description
+     */
     public function v1Division(Request $request)
     {
         // validating the inputs 
@@ -133,6 +152,12 @@ class CalculatorController extends Controller
         return response()->json($response, $httpCode);
     }
     
+    /**
+     * Find the SquareRoot of a value
+     * 
+     * @param Request $request
+     * @return JSON Array Description
+     */
     public function v1SquareRoot(Request $request)
     {
         // validating the inputs 
@@ -157,7 +182,12 @@ class CalculatorController extends Controller
         return response()->json($response, $httpCode);
     }
     
-    
+    /**
+     * Save a value for later use
+     * 
+     * @param Request $request
+     * @return JSON Array Description
+     */
     public function v1SaveValue(Request $request)
     {
         // validating the inputs 
@@ -182,7 +212,12 @@ class CalculatorController extends Controller
         }
         return response()->json($response, $httpCode);
     }
-    
+    /**
+     * Retrieve the value 
+     * 
+     * @param Request $request
+     * @return JSON Array Description
+     */
     public function v1GetValue(Request $request)
     {
         try 
@@ -203,7 +238,12 @@ class CalculatorController extends Controller
         }
         return response()->json($response, $httpCode);
     }
-    
+    /**
+     * Clear the value
+     * 
+     * @param Request $request
+     * @return JSON Array Description
+     */
     public function v1ClearValue(Request $request)
     {
         // validating the inputs 
