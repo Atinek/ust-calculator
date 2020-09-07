@@ -192,7 +192,7 @@ class CalculatorController extends Controller
     {
         // validating the inputs 
         $this->validate($request, [
-            'value' => 'required|numeric|between:1,99999999'
+            'value' => 'required|numeric|between:1,9999999999999999'
         ]);
         
         $num1 = $request->get('value');
